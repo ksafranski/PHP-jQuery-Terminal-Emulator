@@ -1,0 +1,62 @@
+/*
+*  PHP+JQuery Temrinal Emulator by Fluidbyte <http://www.fluidbyte.net>
+*
+*  This software is released as-is with no warranty and is complete free
+*  for use, modification and redistribution
+*/
+
+/* RESET */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:baseline;}
+    a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;}
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section{display:block;}
+    body{line-height:1;}
+    ol, ul{list-style:none;}
+    blockquote, q{quotes:none;}
+    blockquote:before, blockquote:after,
+    q:before, q:after{content:'';content:none;}
+    ins{text-decoration:none;}
+    del{text-decoration:line-through;}
+    table{border-collapse:collapse;border-spacing:0;}
+    
+    * { box-sizing: border-box; }
+
+/* DOCUMENT */
+
+    html { width: 100%; height: 100%; overflow: hidden; }
+    body { width: 100%; height: 100%; }
+    
+/* GLOBALS */
+
+    a,a:link,a:visited { cursor: pointer; }
+    a:hover,a:active { }
+    
+    .hide { display: none; }
+    .clear { clear: both; }
+    .right { float: right; }
+    .left { float: left; }
+
+/* TERMINAL */
+
+    #terminal { overflow: scroll; background: #1a1a1a; width: 100%; height: 100%; color: #fff; font-family: monospace; padding: 5px; line-height: 135%; }
+    
+        .command { font-weight: bold; color: #8a8af2; }
+        .data { padding: 0 15px; }
+    
+    #command, #command input { display: block; position: relative; background: #1a1a1a; color: #fff; border: none; font-family: monospace; width: 100%; }
+        #command input { padding-left: 15px; }
+        #command #prompt { position: absolute; z-index: 9999; font-weight: bold; }
+    
+    #command input:focus { outline: none; }

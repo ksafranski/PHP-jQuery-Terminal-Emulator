@@ -88,6 +88,12 @@
             $editors = array('vi','vim','nano');
             $this->command = str_replace($editors,'cat',$this->command);
             
+            // Handle blocked commands
+            $blocked = explode(',',BLOCKED);
+            if(in_array($command_parts[0],$blocked)){
+                $this->command = 'echo ERROR: Command not allowed';
+            }
+            
             // Update exec command
             $this->command_exec = $this->command;
         }

@@ -95,7 +95,7 @@
             }
             
             // Update exec command
-            $this->command_exec = $this->command;
+            $this->command_exec = $this->command . ' 2>&1';
         }
         
         ////////////////////////////////////////////////////

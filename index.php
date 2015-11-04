@@ -7,7 +7,7 @@
 */
 -->
 <!doctype html>
-
+<html>
 <head>
     <meta charset="utf-8">
     <title>Terminal</title>
@@ -23,7 +23,7 @@
     
         <div id="command">
             <div id="prompt">&gt;</div>
-            <input type="text">
+            <input type="text" autocapitalize="off">
         </div>
     
     </div>
